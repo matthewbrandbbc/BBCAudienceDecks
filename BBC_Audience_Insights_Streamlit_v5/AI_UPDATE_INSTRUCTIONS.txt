@@ -1,0 +1,62 @@
+BBC AUDIENCE AI AND FOOTER UPDATE - VERSION 4
+==============================================
+
+This update adds:
+- A grounded AI Overview above the slide preview.
+- An "Ask the Audience AI" question bar beneath the overview.
+- Cross-workbook questions covering all eight GWI regional exports.
+- Expandable evidence tables with workbook labels and exact cells.
+- No external API, API key or usage charge.
+- A clean evidence-engine boundary for a future LLM connection.
+- Bottom-anchored PowerPoint footers with tighter paragraph spacing.
+- Composition questions, such as "What percentage of the base are male?"
+- Top-index ranking across behaviour, interest, demographic, business and AI sections.
+
+UPLOAD TO GITHUB
+----------------
+
+Open your existing nested project folder:
+
+BBC_Audience_Insights_Streamlit_Web_Upload/bbc_audience_dashboard/
+
+Replace or add the files from this ZIP while preserving their folders:
+
+1. Replace:
+   app.py
+   README.md
+   src/audience_ai.py
+   src/pptx_service.py
+   tests/test_audience_ai.py
+   tests/test_model_and_export.py
+
+2. Commit the changes to the main branch.
+
+3. Streamlit Community Cloud should rebuild automatically. If it does not,
+   open Manage app and select Reboot app.
+
+No changes are required to requirements.txt, packages.txt, the PowerPoint
+template or the eight input workbooks.
+
+SECURITY WARNING
+----------------
+
+The current GitHub repository contains the source GWI workbooks. If the
+repository remains public, those workbooks can be downloaded directly from
+GitHub even though the Streamlit dashboard does not provide a download button.
+Move the repository and Streamlit app to private access before treating the
+deployment as an internal-only BBC tool.
+
+SUPPORTED EXAMPLE QUESTIONS
+---------------------------
+
+What does an index of 123 mean?
+What percentage of the base are male?
+Are there any things that BBC audiences are more likely to do?
+What are the top indexing qualities for C-Suites?
+What is the strongest argument for BBC audiences in Latin America?
+Which audience has the strongest digital media affinity in Europe?
+How does BBC compare with CNN for C-Suites in APAC?
+What are the top affinities for HNWIs in North America on TV?
+
+The free grounded version is intentionally limited to evidence present in the
+workbooks. It will disclose unsupported requests rather than invent an answer.
