@@ -1,0 +1,27 @@
+BBC Audience Insights V6.6 — manual GitHub update
+
+Open this existing GitHub folder:
+BBC_Audience_Insights_Streamlit_v5
+
+Replace these existing files:
+- app.py
+- src/audience_ai.py
+- README.md
+
+Add these new files:
+- src/chatbot_knowledge.py
+- CHATBOT_GUIDE.md
+
+Optional test update (recommended, but not required by Streamlit):
+- tests/test_audience_ai.py
+
+No PowerPoint template or workbook replacement is required for this chatbot-only update. Keep the existing corrected V6.3 template and eight workbooks in GitHub.
+
+Do not rename the GitHub application folder. Keep Streamlit's main file path as:
+BBC_Audience_Insights_Streamlit_v5/app.py
+
+After committing the files to main, reboot:
+https://share.streamlit.io/
+
+The live app remains:
+https://bbcaudiencedecks-v5.streamlit.app/
